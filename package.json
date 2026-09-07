@@ -1,0 +1,23 @@
+{
+  "name": "leaforalifescience-app",
+  "version": "1.0.0",
+  "description": "Leafora Life Science Full-Stack Node/Express API & React App",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "build": "npm --prefix frontend run build",
+    "postinstall": "cd backend && npm install",
+    "dev": "node backend/src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.12.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
